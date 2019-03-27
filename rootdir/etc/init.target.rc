@@ -57,7 +57,6 @@ on post-fs
 
     start vendor.qseecomd
     wait_for_prop vendor.sys.listeners.registered true
-    write /dev/ipa 1
 
 on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
@@ -71,6 +70,9 @@ on post-fs-data
 # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
+
+on early-boot
+    write /dev/ipa 1
 
 on boot
     # Camera
