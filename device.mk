@@ -141,9 +141,9 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.mapper@3.0-impl-qti-display \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
-    vendor.qti.hardware.display.allocator-service \
+    android.hardware.graphics.allocator@2.0-impl:64 \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1 \
     gralloc.sdm660
 
 PRODUCT_PACKAGES += \
@@ -160,15 +160,13 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.frameworks.displayservice@1.0 \
     libdisplayconfig \
-    libgralloc.qti \
     libqdMetaData \
     libqdMetaData.system \
     libqdMetaData.vendor \
     libtinyxml \
     libtinyxml.vendor \
-    vendor.display.config@2.0 \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
-    vendor.qti.hardware.display.mapper@2.0.vendor
+    vendor.display.config@1.9 \
+    vendor.display.config@2.0
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/qdcm_calib_data_boe_ft8719_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_boe_ft8719_fhdplus_video_mode_dsi_panel.xml \
