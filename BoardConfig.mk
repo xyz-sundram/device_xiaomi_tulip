@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/twolip
 # Assert
 TARGET_OTA_ASSERT_DEVICE := tulip,twolip
 
+# APEX
+OVERRIDE_TARGET_FLATTEN_APEX := true
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
