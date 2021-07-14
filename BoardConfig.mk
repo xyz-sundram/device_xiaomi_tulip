@@ -38,6 +38,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_DENSITY := 440
 
 # Kernel
+TARGET_KERNEL_SOURCE := kernel/xiaomi/tulip
 TARGET_KERNEL_CONFIG := tulip_defconfig
 
 # Manifest
