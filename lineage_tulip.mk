@@ -26,7 +26,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := twolip
+PRODUCT_DEVICE := tulip
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := lineage_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
