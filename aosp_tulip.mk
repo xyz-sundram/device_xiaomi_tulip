@@ -43,6 +43,14 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_NAME := aosp_tulip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
+# PixelPlusUI OFFICIAL
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.ppui.device_name=RedmiNote6Pro \
+    ro.ppui.version=3.8 \
+    ro.ppui.version_code=Hikaru \
+    ro.ppui.is_official=true \
+    ro.ppui.maintainer_name=Mustafa
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := tulip
