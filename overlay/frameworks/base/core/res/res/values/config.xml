@@ -161,4 +161,8 @@
         C-297.156539,0.363960295 -299.941007,0 -303,0
         Z
     </string>
+
+        <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1.00</item>
+
 </resources>
