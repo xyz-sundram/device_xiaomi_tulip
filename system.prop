@@ -27,5 +27,6 @@ vendor.perf.gestureflingboost.enable=true
 # Radio
 DEVICE_PROVISIONED=1
 persist.sys.fflag.override.settings_network_and_internet_v2=true
+persist.sys.fflag.override.settings_provider_model=false
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
