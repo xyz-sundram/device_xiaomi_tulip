@@ -46,8 +46,8 @@ PRODUCT_MODEL := Redmi Note 6 Pro
 # PixelPlusUI OFFICIAL
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.ppui.device_name=RedmiNote6Pro \
-    ro.ppui.version=3.9 \
-    ro.ppui.version_code=Eternal \
+    ro.ppui.version=3.10 \
+    ro.ppui.version_code=Azrael \
     ro.ppui.is_official=true \
     ro.ppui.maintainer_name=Mustafa
 
