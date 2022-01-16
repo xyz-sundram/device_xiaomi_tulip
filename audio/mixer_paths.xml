@@ -2403,7 +2403,7 @@
     </path>
 
     <path name="speaker-stereo-dmic-ef">
-        <path name="speaker-dmic-endfire" />
+        <path name="handset-mic" />
     </path>
 
     <path name="camcorder-dmic">
