@@ -338,8 +338,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/powerhint_636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_636.json \
-    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(DEVICE_PATH)/configs/powerhint_636.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint_636.json
 
 PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
