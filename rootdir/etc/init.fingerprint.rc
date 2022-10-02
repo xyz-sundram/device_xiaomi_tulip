@@ -38,6 +38,14 @@ on init
     chmod 0700 /sys/bus/platform/devices/soc:fpc1020/device_prepare
     chmod 0700 /sys/bus/platform/devices/soc:fpc1020/vendor
 
+on boot
+    chmod 0600 /data/misc/fpc/calibration_image.pndat
+
 on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
+    mkdir /persist/qti_fp 0700 system system
+    mkdir /mnt/vendor/persist/fpc 0770 system system	
+    copy /data/vendor/fpc/user.db /data/vendor_de/0/fpdata/user.db	
+    chown system system /data/vendor_de/0/fpdata/user.db	
+    rm /data/vendor/fpc/user.db
