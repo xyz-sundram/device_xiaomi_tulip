@@ -103,7 +103,7 @@ system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 
 # Camera - from tulip V10.3.6.0.PEKMIXM
-vendor/lib/hw/camera.sdm660.so|78b9c0db7f8372dec2e5b3713d7ad45e6f35e109
+vendor/lib/hw/camera.sdm660.so|c60500e997dd7b24012364f0366cd1ec9e6fe988|0ce46475866eb67fb44e604ba691f46dab86d2b6
 vendor/lib/libSNPE.so|66f23aae6d30b09121f06635c749d6ae47543359
 vendor/lib/libVDClearShot.so|fe429e3ddac8f989d2c754b6a3da36ebe8b85060
 vendor/lib/libVDSuperPhotoAPI.so|913cf65475d0329b321c912d24c98abc428d5e55
