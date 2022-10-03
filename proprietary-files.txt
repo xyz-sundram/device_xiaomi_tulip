@@ -1,6 +1,6 @@
 # jasmine package version: V11.0.28.0.QDIMIXM, unless stated otherwise
 # S62Pro: Cat S62Pro sdm660_64-user 11 RKQ1.210406.002 1.015.00
-# tulip: tulip-user 9 PKQ1.180904.001 V10.3.2.0.PEKMIXM release-keys unless stated otherwise
+# tulip: tulip-user 9 PKQ1.180904.001 V12.0.1.0.PEKMIXM release-keys unless stated otherwise
 
 # ADSP - from jasmine
 vendor/bin/adsprpcd|0cdd541ee0a365c5dccd0613e495611f4d0f6607

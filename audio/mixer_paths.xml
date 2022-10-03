@@ -182,7 +182,6 @@
     <ctl name="I2S TX2 INP1" value="ZERO" />
     <ctl name="I2S TX2 INP2" value="ZERO" />
     <ctl name="INT4_MI2S_RX Audio Mixer MultiMedia4" value="0" />
-    <ctl name="ADC1_INP1 Switch" value="0" />
     <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia4" value="0" />
     <ctl name="HDMI Mixer MultiMedia4" value="0" />
     <ctl name="INT4_MI2S_RX_VI_FB_MONO_CH_MUX" value="ZERO" />
@@ -313,6 +312,8 @@
     <!-- audio record compress end-->
 
     <!-- split a2dp -->
+    <ctl name="BT SampleRate" value="KHZ_8" />
+    <ctl name="AFE Input Channels" value="Zero" />
     <ctl name="SLIM7_RX ADM Channels" value="Zero" />
     <!-- split a2dp end-->
 
@@ -351,9 +352,9 @@
     <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="RX4 Digital Volume" value="84" />
     <ctl name="RX5 Digital Volume" value="84" />
-    <ctl name="ADC1 Volume" value="8" />
-    <ctl name="ADC2 Volume" value="8" />
-    <ctl name="ADC3 Volume" value="8" />
+    <ctl name="ADC1 Volume" value="4" />
+    <ctl name="ADC2 Volume" value="4" />
+    <ctl name="ADC3 Volume" value="4" />
     <ctl name="DEC1 Volume" value="84" />
     <ctl name="DEC2 Volume" value="84" />
     <ctl name="DEC3 Volume" value="84" />
@@ -497,8 +498,7 @@
     </path>
 
     <path name="deep-buffer-playback bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="deep-buffer-playback bt-sco" />
     </path>
 
@@ -560,12 +560,21 @@
         <ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
     </path>
 
+    <path name="low-latency-playback speaker-and-bt-sco">
+        <path name="low-latency-playback bt-sco" />
+        <path name="low-latency-playback speaker" />
+    </path>
+
     <path name="low-latency-playback bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="low-latency-playback bt-sco" />
     </path>
 
+    <path name="low-latency-playback speaker-and-bt-sco-wb">
+        <path name="low-latency-playback bt-sco-wb" />
+        <path name="low-latency-playback speaker" />
+    </path>	
+	
     <path name="low-latency-playback speaker-and-hdmi">
         <path name="low-latency-playback hdmi" />
         <path name="low-latency-playback speaker" />
@@ -653,8 +662,7 @@
     </path>
 
     <path name="audio-ull-playback bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="audio-ull-playback bt-sco" />
     </path>
 
@@ -724,8 +732,7 @@
     </path>
 
     <path name="compress-offload-playback bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback bt-sco" />
     </path>
 
@@ -801,8 +808,7 @@
     </path>
 
     <path name="compress-offload-playback2 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback2 bt-sco" />
     </path>
 
@@ -878,8 +884,7 @@
     </path>
 
     <path name="compress-offload-playback3 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback3 bt-sco" />
     </path>
 
@@ -956,8 +961,7 @@
     </path>
 
     <path name="compress-offload-playback4 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback4 bt-sco" />
     </path>
 
@@ -1035,8 +1039,7 @@
     </path>
 
     <path name="compress-offload-playback5 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback5 bt-sco" />
     </path>
 
@@ -1113,8 +1116,7 @@
     </path>
 
     <path name="compress-offload-playback6 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback6 bt-sco" />
     </path>
 
@@ -1191,8 +1193,7 @@
     </path>
 
     <path name="compress-offload-playback7 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback7 bt-sco" />
     </path>
 
@@ -1269,8 +1270,7 @@
     </path>
 
     <path name="compress-offload-playback8 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback8 bt-sco" />
     </path>
 
@@ -1347,8 +1347,7 @@
     </path>
 
     <path name="compress-offload-playback9 bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-offload-playback9 bt-sco" />
     </path>
 
@@ -1417,8 +1416,7 @@
     </path>
 
     <path name="audio-record bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="audio-record bt-sco" />
     </path>
 
@@ -1435,8 +1433,7 @@
     </path>
 
     <path name="audio-record-compress bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="audio-record-compress bt-sco" />
     </path>
 
@@ -1453,8 +1450,7 @@
     </path>
 
     <path name="low-latency-record bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="low-latency-record bt-sco" />
     </path>
 
@@ -1664,8 +1660,7 @@
     </path>
 
     <path name="compress-voip-call bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="compress-voip-call bt-sco" />
     </path>
 
@@ -1719,8 +1714,7 @@
     </path>
 
     <path name="voicemmode1-call bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="voicemmode1-call bt-sco" />
     </path>
 
@@ -1774,8 +1768,7 @@
     </path>
 
     <path name="voicemmode2-call bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="KHZ_16" />
         <path name="voicemmode2-call bt-sco" />
     </path>
 
@@ -2232,13 +2225,6 @@
         <path name="voice-headphones" />
     </path>
 
-    <path name="voice-headset">
-        <path name="headphones" />
-        <ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="RX2 Digital Volume" value="84" />
-        <ctl name="Configuration" value="0" />
-    </path>
-
     <path name="voice-headset-mic">
         <path name="headset-mic" />
     </path>
@@ -2555,6 +2541,8 @@
     </path>
 
     <path name="bt-a2dp">
+        <ctl name="BT SampleRate" value="KHZ_48" />
+        <ctl name="AFE Input Channels" value="Two" />
         <ctl name="SLIM7_RX ADM Channels" value="Two" />
     </path>
 
@@ -2689,8 +2677,7 @@
     </path>
 
     <path name="mmap-playback bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
+        <ctl name="BT SampleRate" value="16000" />
         <path name="mmap-playback bt-sco" />
     </path>
 
@@ -2715,8 +2702,6 @@
     </path>
 
     <path name="mmap-record bt-sco-wb">
-        <ctl name="BT SampleRate RX" value="KHZ_16" />
-        <ctl name="BT SampleRate TX" value="KHZ_16" />
         <ctl name="AUX PCM SampleRate" value="16000" />
         <path name="mmap-record bt-sco" />
     </path>
