@@ -250,6 +250,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.debugrom.rc \
     init.fingerprint.rc \
     init.qcom.power.rc \
     init.qcom.rc \
