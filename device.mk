@@ -393,7 +393,8 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamera_shim
+    libcamera_shim \
+    libpiex_shim
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
