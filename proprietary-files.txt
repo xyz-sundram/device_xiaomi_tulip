@@ -845,6 +845,13 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# DSP - from S62Pro
+vendor/bin/dspservice|a8eb76af6150bbf29c12b76b00ab469b99f563f7
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|f902e821229cd1fff50ebfba99b0a068cbf74a56
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|223a9268bd92bd80dab3df02fbef38ea86bcbadd
+
 # FM - from S62Pro
 lib64/fm_helium.so:system_ext/lib64/fm_helium.so|b2440e4feaae8a7f5e2269525520f9774b6962fc
 lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so|758c6e7cfafc964b5cd9d71806ec5455e0d78716
