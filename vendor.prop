@@ -103,6 +103,14 @@ persist.vendor.imx376_sunny.low.lux=290
 vendor.video.disable.ubwc=1
 vidc.enc.dcvs.extra-buff-count=2
 
+# Dalvik overrides
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+
 # Display
 debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_app_phase_offset_ns=15000000
