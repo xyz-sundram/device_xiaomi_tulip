@@ -17,6 +17,7 @@ persist.vendor.cne.feature=1
 ro.netflix.bsp_rev=Q660-13149-1
 
 # Perf
+ro.vendor.qti.sys.fw.bg_apps_limit=32
 vendor.perf.gestureflingboost.enable=true
 
 # Radio
