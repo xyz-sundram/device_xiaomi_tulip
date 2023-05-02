@@ -430,4 +430,10 @@
         C-297.156539,0.363960295 -299.941007,0 -303,0
         Z
     </string>
+    
+    <!-- Flag indicating whether the surface flinger has limited
+         alpha compositing functionality in hardware.  If set, the window
+         manager will disable alpha trasformation in animations where not
+         strictly needed. -->
+    <bool name="config_sf_limitedAlpha">true</bool>
 </resources>
