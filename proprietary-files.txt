@@ -1229,3 +1229,6 @@ vendor/lib64/libwvhidl.so|0466cd3b2a7b93efd23945e2637430513472ad7c
 
 # Wifi - from jasmine V11.0.8.0.QDIMIXM
 vendor/bin/cnss-daemon|a371213adc8fc7677d519c8d942761ffeee0f345
+
+# Wlan firmware
+vendor/firmware/wlan/qca_cld/wlan_mac.bin
