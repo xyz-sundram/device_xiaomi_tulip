@@ -430,6 +430,9 @@ on property:vendor.radio.atfwd.start=false
     # Enable suspend to RAM
     write /sys/power/mem_sleep "deep"
 
+    # This initializes vendor.qti.hardware.perf service
+    setprop vendor.post_boot.parsed 1
+
 # corefile limit
 #on property:persist.debug.trace=1
 #    mkdir /data/core 0777 root root
