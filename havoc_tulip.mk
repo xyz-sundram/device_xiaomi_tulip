@@ -39,8 +39,3 @@ PRODUCT_MODEL := Redmi Note 6 Pro
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 TARGET_VENDOR_PRODUCT_NAME := tulip
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coral-user 11 RQ3A.210905.001 7511028 release-keys"
-
-BUILD_FINGERPRINT := google/coral/coral:11/RQ3A.210905.001/7511028:user/release-keys
