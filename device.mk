@@ -205,6 +205,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
+    
+# Google Camera Lite
+PRODUCT_PACKAGES += \
+    GoogleCameraLite
 
 # GPS / Location
 PRODUCT_PACKAGES += \
