@@ -22,7 +22,6 @@ TARGET_SCREEN_WIDTH := 1080
 # Platform
 BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := sdm660
-TARGET_ENFORCES_QSSI := true
 
 # Architecture
 TARGET_ARCH := arm64
