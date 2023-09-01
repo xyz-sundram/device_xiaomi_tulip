@@ -48,8 +48,7 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := vendor/xiaomi/sdm660_defconfig
-TARGET_KERNEL_CONFIG += vendor/xiaomi/tulip.config
+TARGET_KERNEL_CONFIG := vendor/tulip-perf_defconfig
 TARGET_KERNEL_VERSION := 4.19
 
 # QCOM hardware
