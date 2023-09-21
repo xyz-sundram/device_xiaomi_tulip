@@ -8,9 +8,8 @@ DEVICE_PATH := device/xiaomi/twolip
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
-	
+    $(DEVICE_PATH)/overlay
+    	
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
@@ -225,14 +224,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/gps/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     $(DEVICE_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(DEVICE_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
-
-# Google camera
-PRODUCT_PACKAGES += \
-    GoogleCameraGo
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/GoogleCameraGo/permissions/com.google.android.GoogleCameraGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.GoogleCameraGo.xml \
-    $(DEVICE_PATH)/GoogleCameraGo/configs/hiddenapi-package-whitelist-GoogleCameraGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-GoogleCameraGo.xml
 
 # Healthd
 PRODUCT_PACKAGES += \
