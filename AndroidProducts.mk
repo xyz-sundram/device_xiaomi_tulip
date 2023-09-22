@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_twolip.mk
+    $(LOCAL_DIR)/droidx_twolip.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_twolip-user \
-    cherish_twolip-userdebug \
-    cherish_twolip-eng
+    droidx_twolip-user \
+    droidx_twolip-userdebug \
+    droidx_twolip-eng

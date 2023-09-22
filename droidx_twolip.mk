@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # Inherit from twolip device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,19 +28,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := twolip
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := cherish_twolip
+PRODUCT_NAME := droidx_twolip
 PRODUCT_MODEL := Redmi Note 6 Pro
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# CherishOS
-CHERISH_BUILD_TYPE=OFFICIAL
-TARGET_USES_MINI_GAPPS := true
-USE_PIXEL_CHARGING := true
-TARGET_INCLUDE_CARRIER_SETTINGS := true
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=Sundram
+# DROID X Stuff
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
