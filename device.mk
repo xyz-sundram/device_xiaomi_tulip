@@ -174,10 +174,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/display/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_tianma_nt36672a_fhdplus_video_mode_dsi_panel.xml \
     $(DEVICE_PATH)/configs/display/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
@@ -257,6 +253,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
+    init.xiaomi_parts.rc \
     init.target.rc \
     ueventd.qcom.rc
 
@@ -475,6 +472,14 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     RemovePkgs
+
+# DeviceDoze
+PRODUCT_PACKAGES += \
+    DeviceDoze
+
+# DeviceSettings
+PRODUCT_PACKAGES += \
+    DeviceSettings
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)
