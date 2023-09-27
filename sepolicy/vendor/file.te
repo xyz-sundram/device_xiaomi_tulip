@@ -10,3 +10,12 @@ type sysfs_system_sleep_stats, sysfs_type, fs_type;
 type sysfs_touchpanel, fs_type, sysfs_type;
 type thermal_data_file, file_type, data_file_type;
 type hal_lineage_health_default;
+
+# DeviceSettings
+type sysfs_fpsinfo, sysfs_type, fs_type;
+type sysfs_headphonegain, sysfs_type, fs_type;
+type sysfs_micgain, sysfs_type, fs_type;
+type sysfs_earpiecegain, sysfs_type, fs_type;
+
+# Kcal
+type kcal_dev, sysfs_type, fs_type;
