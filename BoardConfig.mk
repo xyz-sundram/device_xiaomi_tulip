@@ -9,9 +9,6 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 DEVICE_PATH := device/xiaomi/tulip
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := tulip,tulip
-
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
