@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_twolip.mk
+    $(LOCAL_DIR)/droidx_tulip.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_twolip-user \
-    droidx_twolip-userdebug \
-    droidx_twolip-eng
+    droidx_tulip-user \
+    droidx_tulip-userdebug \
+    droidx_tulip-eng

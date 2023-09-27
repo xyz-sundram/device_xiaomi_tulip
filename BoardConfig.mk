@@ -7,10 +7,10 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/xiaomi/twolip
+DEVICE_PATH := device/xiaomi/tulip
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := tulip,twolip
+TARGET_OTA_ASSERT_DEVICE := tulip,tulip
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true
@@ -96,8 +96,8 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_twolip
-TARGET_RECOVERY_DEVICE_MODULES := libinit_twolip
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tulip
+TARGET_RECOVERY_DEVICE_MODULES := libinit_tulip
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/input_suspend
@@ -169,4 +169,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/xiaomi/twolip/BoardConfigVendor.mk
+include vendor/xiaomi/tulip/BoardConfigVendor.mk

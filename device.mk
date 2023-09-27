@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/twolip
+DEVICE_PATH := device/xiaomi/tulip
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -110,7 +110,7 @@ PRODUCT_PACKAGES += \
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1.vendor \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_twolip
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_tulip
 
 PRODUCT_PACKAGES += \
     org.ifaa.android.manager
@@ -140,7 +140,7 @@ PRODUCT_COPY_FILES += \
 
 # ConsumerIR
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-service.twolip
+    android.hardware.ir@1.0-service.tulip
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
@@ -302,7 +302,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_twolip
+    android.hardware.light@2.0-service.xiaomi_tulip
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
@@ -477,4 +477,4 @@ PRODUCT_PACKAGES += \
     RemovePkgs
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/twolip/twolip-vendor.mk)
+$(call inherit-product, vendor/xiaomi/tulip/tulip-vendor.mk)
